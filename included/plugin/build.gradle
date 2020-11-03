@@ -1,0 +1,16 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+gradlePlugin {
+    plugins {
+        fooPlugin {
+            id = 'com.foo.bar'
+            implementationClass = 'com.foo.bar.Baz'
+        }
+    }
+}
+
+dependencies {
+    implementation rootProject
+}
